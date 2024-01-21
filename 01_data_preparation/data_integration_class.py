@@ -1,6 +1,4 @@
-# python data_combiner.py --data_paths data1.csv data2.csv data3.csv --mapping_path products_labeled.csv --output_all data_all.csv
-
-
+# python data_integration_class.py --data_paths data1.csv data2.csv data3.csv --mapping_path products_labeled.csv --output_all data_all.csv
 import pandas as pd
 import argparse
 

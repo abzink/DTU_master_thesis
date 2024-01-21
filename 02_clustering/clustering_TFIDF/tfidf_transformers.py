@@ -5,6 +5,7 @@ class TfidfTransformer:
     """
     Class for transforming text data into TF-IDF vectors.
 
+    Parameters to modify:
     max_df: Ignore terms that have a document frequency strictly higher than the given threshold.
     min_df: Ignore terms that have a document frequency strictly lower than the given threshold.
     """

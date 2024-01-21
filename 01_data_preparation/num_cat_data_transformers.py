@@ -5,17 +5,6 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, RobustScaler
 
-class LogTransformer(BaseEstimator, TransformerMixin):
-    """Transformer to apply log1p transformation to numerical data."""
-    
-    def fit(self, X, y=None):
-        """Fit method (does nothing as this transformer doesn't need to learn any parameters)."""
-        return self
-    
-    def transform(self, X):
-        """Applies the log1p transformation and returns the transformed data."""
-        return np.log1p(X)
-
 class PreprocessingPipeline:
     """
     A preprocessing pipeline that handles categorical and numerical features.
@@ -98,6 +87,17 @@ class PreprocessingPipeline:
         """
         self.fit(df)
         return self.transform(df)
+    
+class LogTransformer(BaseEstimator, TransformerMixin):
+    """Transformer to apply log1p transformation to numerical data."""
+    
+    def fit(self, X, y=None):
+        """Fit method (does nothing as this transformer doesn't need to learn any parameters)."""
+        return self
+    
+    def transform(self, X):
+        """Applies the log1p transformation and returns the transformed data."""
+        return np.log1p(X)
 
 # Usage:
 # pipeline = PreprocessingPipeline(categorical_columns, numerical_columns, log_transform_columns)

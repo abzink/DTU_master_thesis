@@ -10,7 +10,6 @@ import os
 from plotting_utils import save_figure
 import seaborn as sns
 sns.set_style("whitegrid")
-
 import matplotlib as mpl
 import matplotlib.font_manager as font_manager
 

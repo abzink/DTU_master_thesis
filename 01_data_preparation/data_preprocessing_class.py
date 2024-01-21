@@ -154,7 +154,6 @@ class DataProcessor:
         # Remove extra spaces
         self.df['description'] = self.df['description'].apply(lambda s: ' '.join(s.split()))
 
-
     def save(self, output_filename):
         """
         Save the processed DataFrame to a CSV file.
