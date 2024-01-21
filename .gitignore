@@ -1,2 +1,5 @@
 00_data/
 00_figures
+02_clustering/clustering_BERT/bert_embedding_vol_2_improved.pkl
+02_clustering/clustering_BERT/bert_embedding_vol_2.pkl
+02_clustering/clustering_BERT/bert_embeddings_vol_1.pkl
