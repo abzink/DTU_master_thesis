@@ -1,0 +1,1272 @@
+{
+    "cv_metrics": [
+        {
+            "model": "RandomForest",
+            "labeled_percentage": 1.0,
+            "best_params": {
+                "bootstrap": true,
+                "criterion": "gini",
+                "max_depth": 82,
+                "max_features": null,
+                "min_samples_leaf": 5,
+                "min_samples_split": 9,
+                "n_estimators": 673
+            },
+            "best_mean_cv_score": 0.9051953364696257,
+            "best_std_cv_score": 0.004487328808477471
+        },
+        {
+            "model": "XGBoost",
+            "labeled_percentage": 1.0,
+            "best_params": {
+                "colsample_bytree": 0.6558555380447055,
+                "gamma": 2.600340105889054,
+                "learning_rate": 0.1866775698358199,
+                "max_depth": 8,
+                "min_child_weight": 2,
+                "n_estimators": 267,
+                "subsample": 0.7799016533479063
+            },
+            "best_mean_cv_score": 0.924258539578646,
+            "best_std_cv_score": 0.0015904280774222486
+        },
+        {
+            "model": "LightGBM",
+            "labeled_percentage": 1.0,
+            "best_params": {
+                "bagging_fraction": 0.608233797718321,
+                "feature_fraction": 0.9879639408647978,
+                "learning_rate": 0.17648852816008437,
+                "max_depth": 8,
+                "min_data_in_leaf": 485,
+                "num_leaves": 28
+            },
+            "best_mean_cv_score": 0.9275516465534874,
+            "best_std_cv_score": 0.0025296992978098413
+        },
+        {
+            "model": "Bagging",
+            "labeled_percentage": 1.0,
+            "best_params": {
+                "bootstrap": false,
+                "bootstrap_features": true,
+                "max_features": 0.8005575058716043,
+                "max_samples": 0.8540362888980227,
+                "n_estimators": 31
+            },
+            "best_mean_cv_score": 0.9455103293106975,
+            "best_std_cv_score": 0.0021052803990478323
+        }
+    ],
+    "training": [
+        {
+            "model": "RandomForest",
+            "labeled_percentage": 1.0,
+            "train_accuracy": 0.9497443239926365,
+            "train_balanced_accuracy": 0.9497443239926365,
+            "train_top_k_accuracy": 0.9999181836776437,
+            "train_mcc": 0.9376170623238002,
+            "train_error": 0.05025567600736347,
+            "train_log_loss": 0.16591532808467488,
+            "kappa_score_train": 0.9371804049907957,
+            "confusion_matrix": [
+                [
+                    9508,
+                    79,
+                    154,
+                    4,
+                    33
+                ],
+                [
+                    231,
+                    9230,
+                    279,
+                    5,
+                    33
+                ],
+                [
+                    658,
+                    750,
+                    8187,
+                    48,
+                    135
+                ],
+                [
+                    2,
+                    4,
+                    15,
+                    9756,
+                    1
+                ],
+                [
+                    5,
+                    5,
+                    15,
+                    1,
+                    9752
+                ]
+            ],
+            "train_report": {
+                "0": {
+                    "precision": 0.9138792772010765,
+                    "recall": 0.9723869912047454,
+                    "f1-score": 0.9422257457140025,
+                    "support": 9778.0
+                },
+                "1": {
+                    "precision": 0.9167659912594358,
+                    "recall": 0.9439558191859276,
+                    "f1-score": 0.9301622493197621,
+                    "support": 9778.0
+                },
+                "2": {
+                    "precision": 0.9464739884393064,
+                    "recall": 0.8372877889138883,
+                    "f1-score": 0.8885391795094421,
+                    "support": 9778.0
+                },
+                "3": {
+                    "precision": 0.9940900754024863,
+                    "recall": 0.9977500511352014,
+                    "f1-score": 0.9959167006941609,
+                    "support": 9778.0
+                },
+                "4": {
+                    "precision": 0.9797066505927265,
+                    "recall": 0.9973409695234199,
+                    "f1-score": 0.9884451652138658,
+                    "support": 9778.0
+                },
+                "accuracy": 0.9497443239926365,
+                "macro avg": {
+                    "precision": 0.9501831965790064,
+                    "recall": 0.9497443239926365,
+                    "f1-score": 0.9490578080902468,
+                    "support": 48890.0
+                },
+                "weighted avg": {
+                    "precision": 0.9501831965790063,
+                    "recall": 0.9497443239926365,
+                    "f1-score": 0.9490578080902466,
+                    "support": 48890.0
+                }
+            }
+        },
+        {
+            "model": "XGBoost",
+            "labeled_percentage": 1.0,
+            "train_accuracy": 0.9405195336469626,
+            "train_balanced_accuracy": 0.9405195336469626,
+            "train_top_k_accuracy": 0.9997750051135201,
+            "train_mcc": 0.926150975207003,
+            "train_error": 0.05948046635303739,
+            "train_log_loss": 0.1778205858806467,
+            "kappa_score_train": 0.9256494170587032,
+            "confusion_matrix": [
+                [
+                    9196,
+                    127,
+                    433,
+                    1,
+                    21
+                ],
+                [
+                    581,
+                    8258,
+                    912,
+                    6,
+                    21
+                ],
+                [
+                    453,
+                    238,
+                    9074,
+                    0,
+                    13
+                ],
+                [
+                    2,
+                    0,
+                    42,
+                    9734,
+                    0
+                ],
+                [
+                    9,
+                    4,
+                    45,
+                    0,
+                    9720
+                ]
+            ],
+            "train_report": {
+                "0": {
+                    "precision": 0.8979591836734694,
+                    "recall": 0.9404786254857844,
+                    "f1-score": 0.9187272091513063,
+                    "support": 9778.0
+                },
+                "1": {
+                    "precision": 0.957227309609366,
+                    "recall": 0.8445489875230109,
+                    "f1-score": 0.8973648465091009,
+                    "support": 9778.0
+                },
+                "2": {
+                    "precision": 0.8636969350847135,
+                    "recall": 0.9280016363264472,
+                    "f1-score": 0.8946953263656084,
+                    "support": 9778.0
+                },
+                "3": {
+                    "precision": 0.9992813879478493,
+                    "recall": 0.995500102270403,
+                    "f1-score": 0.9973871612275219,
+                    "support": 9778.0
+                },
+                "4": {
+                    "precision": 0.9943734015345268,
+                    "recall": 0.9940683166291675,
+                    "f1-score": 0.9942208356773897,
+                    "support": 9778.0
+                },
+                "accuracy": 0.9405195336469626,
+                "macro avg": {
+                    "precision": 0.9425076435699848,
+                    "recall": 0.9405195336469626,
+                    "f1-score": 0.9404790757861854,
+                    "support": 48890.0
+                },
+                "weighted avg": {
+                    "precision": 0.9425076435699851,
+                    "recall": 0.9405195336469626,
+                    "f1-score": 0.9404790757861855,
+                    "support": 48890.0
+                }
+            }
+        },
+        {
+            "model": "LightGBM",
+            "labeled_percentage": 1.0,
+            "train_accuracy": 0.9462875843730825,
+            "train_balanced_accuracy": 0.9462875843730825,
+            "train_top_k_accuracy": 0.9998159132746983,
+            "train_mcc": 0.9332310609796927,
+            "train_error": 0.05371241562691753,
+            "train_log_loss": 0.1508837408098832,
+            "kappa_score_train": 0.932859480466353,
+            "confusion_matrix": [
+                [
+                    9177,
+                    148,
+                    441,
+                    0,
+                    12
+                ],
+                [
+                    496,
+                    8438,
+                    837,
+                    0,
+                    7
+                ],
+                [
+                    398,
+                    223,
+                    9151,
+                    0,
+                    6
+                ],
+                [
+                    1,
+                    0,
+                    5,
+                    9772,
+                    0
+                ],
+                [
+                    2,
+                    1,
+                    49,
+                    0,
+                    9726
+                ]
+            ],
+            "train_report": {
+                "0": {
+                    "precision": 0.910958904109589,
+                    "recall": 0.9385354878298221,
+                    "f1-score": 0.9245416078984485,
+                    "support": 9778.0
+                },
+                "1": {
+                    "precision": 0.9577752553916005,
+                    "recall": 0.8629576600531806,
+                    "f1-score": 0.9078975683236498,
+                    "support": 9778.0
+                },
+                "2": {
+                    "precision": 0.87293713631594,
+                    "recall": 0.935876457353242,
+                    "f1-score": 0.9033117812546271,
+                    "support": 9778.0
+                },
+                "3": {
+                    "precision": 1.0,
+                    "recall": 0.9993863775823276,
+                    "f1-score": 0.999693094629156,
+                    "support": 9778.0
+                },
+                "4": {
+                    "precision": 0.9974361603938058,
+                    "recall": 0.9946819390468399,
+                    "f1-score": 0.9960571457831944,
+                    "support": 9778.0
+                },
+                "accuracy": 0.9462875843730825,
+                "macro avg": {
+                    "precision": 0.9478214912421871,
+                    "recall": 0.9462875843730825,
+                    "f1-score": 0.9463002395778151,
+                    "support": 48890.0
+                },
+                "weighted avg": {
+                    "precision": 0.9478214912421871,
+                    "recall": 0.9462875843730825,
+                    "f1-score": 0.9463002395778152,
+                    "support": 48890.0
+                }
+            }
+        },
+        {
+            "model": "Bagging",
+            "labeled_percentage": 1.0,
+            "train_accuracy": 1.0,
+            "train_balanced_accuracy": 1.0,
+            "train_top_k_accuracy": 1.0,
+            "train_mcc": 1.0,
+            "train_error": 0.0,
+            "train_log_loss": 0.02363394111552412,
+            "kappa_score_train": 1.0,
+            "confusion_matrix": [
+                [
+                    9778,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    9778,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    9778,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    9778,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    9778
+                ]
+            ],
+            "train_report": {
+                "0": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 9778.0
+                },
+                "1": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 9778.0
+                },
+                "2": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 9778.0
+                },
+                "3": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 9778.0
+                },
+                "4": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 9778.0
+                },
+                "accuracy": 1.0,
+                "macro avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 48890.0
+                },
+                "weighted avg": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 48890.0
+                }
+            }
+        }
+    ],
+    "test": [
+        {
+            "model": "RandomForest",
+            "labeled_percentage": 1.0,
+            "test_accuracy": 0.7285798122065728,
+            "test_balanced_accuracy": 0.5229417261625153,
+            "test_top_k_accuracy": 0.9847417840375586,
+            "test_mcc": 0.5027855466721307,
+            "test_error": 0.27142018779342725,
+            "test_log_loss": 0.8194380112639806,
+            "kappa_score_test": 0.48725330652815146,
+            "test_confusion_matrix": [
+                [
+                    394,
+                    25,
+                    70,
+                    2,
+                    10
+                ],
+                [
+                    47,
+                    263,
+                    89,
+                    4,
+                    3
+                ],
+                [
+                    233,
+                    298,
+                    1812,
+                    23,
+                    79
+                ],
+                [
+                    0,
+                    3,
+                    6,
+                    2,
+                    1
+                ],
+                [
+                    12,
+                    2,
+                    18,
+                    0,
+                    12
+                ]
+            ],
+            "test_report": {
+                "0": {
+                    "precision": 0.5743440233236151,
+                    "recall": 0.7864271457085829,
+                    "f1-score": 0.6638584667228307,
+                    "support": 501.0
+                },
+                "1": {
+                    "precision": 0.4450084602368866,
+                    "recall": 0.6477832512315271,
+                    "f1-score": 0.5275827482447342,
+                    "support": 406.0
+                },
+                "2": {
+                    "precision": 0.9082706766917293,
+                    "recall": 0.7411042944785277,
+                    "f1-score": 0.8162162162162163,
+                    "support": 2445.0
+                },
+                "3": {
+                    "precision": 0.06451612903225806,
+                    "recall": 0.16666666666666666,
+                    "f1-score": 0.09302325581395349,
+                    "support": 12.0
+                },
+                "4": {
+                    "precision": 0.11428571428571428,
+                    "recall": 0.2727272727272727,
+                    "f1-score": 0.1610738255033557,
+                    "support": 44.0
+                },
+                "accuracy": 0.7285798122065728,
+                "macro avg": {
+                    "precision": 0.4212850007140407,
+                    "recall": 0.5229417261625153,
+                    "f1-score": 0.45235090250021803,
+                    "support": 3408.0
+                },
+                "weighted avg": {
+                    "precision": 0.790770058694115,
+                    "recall": 0.7285798122065728,
+                    "f1-score": 0.7484283637488452,
+                    "support": 3408.0
+                }
+            }
+        },
+        {
+            "model": "XGBoost",
+            "labeled_percentage": 1.0,
+            "test_accuracy": 0.7978286384976526,
+            "test_balanced_accuracy": 0.4234019736470177,
+            "test_top_k_accuracy": 0.9914906103286385,
+            "test_mcc": 0.5204966860267788,
+            "test_error": 0.20217136150234738,
+            "test_log_loss": 0.537161059683822,
+            "kappa_score_test": 0.5153871681963851,
+            "test_confusion_matrix": [
+                [
+                    351,
+                    11,
+                    138,
+                    0,
+                    1
+                ],
+                [
+                    39,
+                    142,
+                    225,
+                    0,
+                    0
+                ],
+                [
+                    132,
+                    82,
+                    2219,
+                    0,
+                    12
+                ],
+                [
+                    0,
+                    0,
+                    12,
+                    0,
+                    0
+                ],
+                [
+                    10,
+                    1,
+                    26,
+                    0,
+                    7
+                ]
+            ],
+            "test_report": {
+                "0": {
+                    "precision": 0.6597744360902256,
+                    "recall": 0.7005988023952096,
+                    "f1-score": 0.6795740561471443,
+                    "support": 501.0
+                },
+                "1": {
+                    "precision": 0.6016949152542372,
+                    "recall": 0.3497536945812808,
+                    "f1-score": 0.4423676012461059,
+                    "support": 406.0
+                },
+                "2": {
+                    "precision": 0.8469465648854961,
+                    "recall": 0.9075664621676892,
+                    "f1-score": 0.8762092793682132,
+                    "support": 2445.0
+                },
+                "3": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1-score": 0.0,
+                    "support": 12.0
+                },
+                "4": {
+                    "precision": 0.35,
+                    "recall": 0.1590909090909091,
+                    "f1-score": 0.21875,
+                    "support": 44.0
+                },
+                "accuracy": 0.7978286384976526,
+                "macro avg": {
+                    "precision": 0.4916831832459918,
+                    "recall": 0.4234019736470177,
+                    "f1-score": 0.4433801873522927,
+                    "support": 3408.0
+                },
+                "weighted avg": {
+                    "precision": 0.7808155748883396,
+                    "recall": 0.7978286384976526,
+                    "f1-score": 0.7840447583013263,
+                    "support": 3408.0
+                }
+            }
+        },
+        {
+            "model": "LightGBM",
+            "labeled_percentage": 1.0,
+            "test_accuracy": 0.8016431924882629,
+            "test_balanced_accuracy": 0.46428531045464727,
+            "test_top_k_accuracy": 0.9891431924882629,
+            "test_mcc": 0.5251605709575379,
+            "test_error": 0.19835680751173712,
+            "test_log_loss": 0.5605536937998107,
+            "kappa_score_test": 0.5187114430459081,
+            "test_confusion_matrix": [
+                [
+                    327,
+                    9,
+                    163,
+                    0,
+                    2
+                ],
+                [
+                    40,
+                    155,
+                    211,
+                    0,
+                    0
+                ],
+                [
+                    128,
+                    72,
+                    2239,
+                    1,
+                    5
+                ],
+                [
+                    0,
+                    0,
+                    10,
+                    2,
+                    0
+                ],
+                [
+                    7,
+                    1,
+                    27,
+                    0,
+                    9
+                ]
+            ],
+            "test_report": {
+                "0": {
+                    "precision": 0.651394422310757,
+                    "recall": 0.6526946107784432,
+                    "f1-score": 0.6520438683948155,
+                    "support": 501.0
+                },
+                "1": {
+                    "precision": 0.6540084388185654,
+                    "recall": 0.3817733990147783,
+                    "f1-score": 0.48211508553654747,
+                    "support": 406.0
+                },
+                "2": {
+                    "precision": 0.8449056603773585,
+                    "recall": 0.9157464212678936,
+                    "f1-score": 0.8789008832188419,
+                    "support": 2445.0
+                },
+                "3": {
+                    "precision": 0.6666666666666666,
+                    "recall": 0.16666666666666666,
+                    "f1-score": 0.26666666666666666,
+                    "support": 12.0
+                },
+                "4": {
+                    "precision": 0.5625,
+                    "recall": 0.20454545454545456,
+                    "f1-score": 0.3,
+                    "support": 44.0
+                },
+                "accuracy": 0.8016431924882629,
+                "macro avg": {
+                    "precision": 0.6758950376346695,
+                    "recall": 0.46428531045464727,
+                    "f1-score": 0.5159453007633743,
+                    "support": 3408.0
+                },
+                "weighted avg": {
+                    "precision": 0.7894425972302431,
+                    "recall": 0.8016431924882629,
+                    "f1-score": 0.7886518081759709,
+                    "support": 3408.0
+                }
+            }
+        },
+        {
+            "model": "Bagging",
+            "labeled_percentage": 1.0,
+            "test_accuracy": 0.7857981220657277,
+            "test_balanced_accuracy": 0.4111875415330025,
+            "test_top_k_accuracy": 0.9823943661971831,
+            "test_mcc": 0.4624693768561087,
+            "test_error": 0.21420187793427226,
+            "test_log_loss": 1.024093572260399,
+            "kappa_score_test": 0.44434902575031665,
+            "test_confusion_matrix": [
+                [
+                    244,
+                    12,
+                    241,
+                    0,
+                    4
+                ],
+                [
+                    18,
+                    141,
+                    246,
+                    0,
+                    1
+                ],
+                [
+                    80,
+                    72,
+                    2283,
+                    0,
+                    10
+                ],
+                [
+                    0,
+                    0,
+                    11,
+                    1,
+                    0
+                ],
+                [
+                    5,
+                    1,
+                    29,
+                    0,
+                    9
+                ]
+            ],
+            "test_report": {
+                "0": {
+                    "precision": 0.7031700288184438,
+                    "recall": 0.4870259481037924,
+                    "f1-score": 0.5754716981132076,
+                    "support": 501.0
+                },
+                "1": {
+                    "precision": 0.6238938053097345,
+                    "recall": 0.3472906403940887,
+                    "f1-score": 0.4462025316455696,
+                    "support": 406.0
+                },
+                "2": {
+                    "precision": 0.8124555160142348,
+                    "recall": 0.9337423312883436,
+                    "f1-score": 0.8688867745004758,
+                    "support": 2445.0
+                },
+                "3": {
+                    "precision": 1.0,
+                    "recall": 0.08333333333333333,
+                    "f1-score": 0.15384615384615385,
+                    "support": 12.0
+                },
+                "4": {
+                    "precision": 0.375,
+                    "recall": 0.20454545454545456,
+                    "f1-score": 0.2647058823529412,
+                    "support": 44.0
+                },
+                "accuracy": 0.7857981220657277,
+                "macro avg": {
+                    "precision": 0.7029038700284826,
+                    "recall": 0.4111875415330025,
+                    "f1-score": 0.46182260809166964,
+                    "support": 3408.0
+                },
+                "weighted avg": {
+                    "precision": 0.7689386167982971,
+                    "recall": 0.7857981220657277,
+                    "f1-score": 0.7650794967506351,
+                    "support": 3408.0
+                }
+            }
+        }
+    ],
+    "pseudo_labels_info": [
+        {
+            "model": "RandomForest",
+            "labeled_percentage": 1.0,
+            "pseudo_label_count": 10471,
+            "pseudo_label_distribution": [
+                1248,
+                2231,
+                6747,
+                60,
+                185
+            ]
+        },
+        {
+            "model": "XGBoost",
+            "labeled_percentage": 1.0,
+            "pseudo_label_count": 14263,
+            "pseudo_label_distribution": [
+                1062,
+                600,
+                12562,
+                0,
+                39
+            ]
+        },
+        {
+            "model": "LightGBM",
+            "labeled_percentage": 1.0,
+            "pseudo_label_count": 14925,
+            "pseudo_label_distribution": [
+                1165,
+                882,
+                12841,
+                1,
+                36
+            ]
+        },
+        {
+            "model": "Bagging",
+            "labeled_percentage": 1.0,
+            "pseudo_label_count": 11250,
+            "pseudo_label_distribution": [
+                197,
+                262,
+                10787,
+                0,
+                4
+            ]
+        }
+    ],
+    "labeled_samples_info": [
+        {
+            "model": "RandomForest",
+            "labeled_percentage": 1.0,
+            "labeled_samples_count": 48890
+        },
+        {
+            "model": "XGBoost",
+            "labeled_percentage": 1.0,
+            "labeled_samples_count": 48890
+        },
+        {
+            "model": "LightGBM",
+            "labeled_percentage": 1.0,
+            "labeled_samples_count": 48890
+        },
+        {
+            "model": "Bagging",
+            "labeled_percentage": 1.0,
+            "labeled_samples_count": 48890
+        }
+    ],
+    "bootstrap_test": [
+        {
+            "model": "RandomForest",
+            "labeled_percentage": 1.0,
+            "mean_accuracy": 0.7285475352112677,
+            "std_accuracy": 0.00711467493004747
+        },
+        {
+            "model": "XGBoost",
+            "labeled_percentage": 1.0,
+            "mean_accuracy": 0.7977963615023473,
+            "std_accuracy": 0.006831045785477273
+        },
+        {
+            "model": "LightGBM",
+            "labeled_percentage": 1.0,
+            "mean_accuracy": 0.8011443661971831,
+            "std_accuracy": 0.0070132177236546505
+        },
+        {
+            "model": "Bagging",
+            "labeled_percentage": 1.0,
+            "mean_accuracy": 0.7867297535211268,
+            "std_accuracy": 0.007431616660636726
+        }
+    ],
+    "feature_importances": {
+        "RandomForest": [
+            {
+                "labeled_percentage": 1.0,
+                "importances": {
+                    "day_week_mode_0": 0.007710043167111819,
+                    "day_week_mode_1": 0.013832616331784332,
+                    "day_week_mode_2": 0.012206566872239004,
+                    "day_week_mode_3": 0.006073447939733355,
+                    "day_week_mode_4": 0.012959608372472814,
+                    "day_week_mode_5": 0.0,
+                    "day_week_mode_6": 1.0148898269417176e-06,
+                    "month_mode_1": 0.00526957097528672,
+                    "month_mode_2": 0.008939233795812693,
+                    "month_mode_3": 0.006034867579307424,
+                    "month_mode_4": 0.002438178788567032,
+                    "month_mode_5": 0.021100021646838187,
+                    "month_mode_6": 0.0058617153866901564,
+                    "month_mode_7": 0.006270309979033051,
+                    "month_mode_8": 0.003169078691641667,
+                    "month_mode_9": 0.0028069151131552205,
+                    "month_mode_10": 0.0055050902463205514,
+                    "month_mode_11": 0.006217831699464362,
+                    "month_mode_12": 0.0041575816184869375,
+                    "quarter_mode_1": 0.005349524561795193,
+                    "quarter_mode_2": 0.0064726767147022125,
+                    "quarter_mode_3": 0.005084045936177895,
+                    "quarter_mode_4": 0.006207969523586071,
+                    "year_mode_2014": 0.012321250614263639,
+                    "year_mode_2015": 0.007196771348989456,
+                    "year_mode_2016": 0.009717574134387588,
+                    "year_mode_2017": 0.003119847683915087,
+                    "year_mode_2018": 0.01004200695185452,
+                    "year_mode_2019": 0.006001576708243225,
+                    "year_mode_2020": 0.005299530572624321,
+                    "year_mode_2021": 0.005683258320887545,
+                    "year_mode_2022": 0.019509613741440095,
+                    "year_mode_2023": 0.003065543051014976,
+                    "customer_country_mode_14": 7.007155455238202e-05,
+                    "customer_country_mode_AE": 0.0002309742198263257,
+                    "customer_country_mode_AR": 0.0,
+                    "customer_country_mode_AT": 0.000562048732420346,
+                    "customer_country_mode_AU": 0.0011919584816459815,
+                    "customer_country_mode_BA": 0.0,
+                    "customer_country_mode_BE": 0.0,
+                    "customer_country_mode_BG": 0.0,
+                    "customer_country_mode_BO": 0.0,
+                    "customer_country_mode_BR": 0.00022485027369432484,
+                    "customer_country_mode_BY": 9.053079482732695e-06,
+                    "customer_country_mode_CA": 0.00040965568854631744,
+                    "customer_country_mode_CH": 0.0012528456731456452,
+                    "customer_country_mode_CL": 0.0,
+                    "customer_country_mode_CN": 0.008693342912442966,
+                    "customer_country_mode_CO": 0.00035250653464021013,
+                    "customer_country_mode_CR": 0.0,
+                    "customer_country_mode_CZ": 0.00013503157636425152,
+                    "customer_country_mode_DE": 0.002908852571338295,
+                    "customer_country_mode_DK": 0.016298905451703084,
+                    "customer_country_mode_DO": 8.243242147280767e-06,
+                    "customer_country_mode_EC": 4.75442893951813e-07,
+                    "customer_country_mode_EE": 0.0,
+                    "customer_country_mode_EG": 8.060219299726906e-05,
+                    "customer_country_mode_ES": 0.003858161592455308,
+                    "customer_country_mode_FI": 7.30033174001753e-05,
+                    "customer_country_mode_FR": 0.005831650482942499,
+                    "customer_country_mode_GB": 0.004734361395780105,
+                    "customer_country_mode_GR": 0.005501378042047644,
+                    "customer_country_mode_HK": 0.004179247800418714,
+                    "customer_country_mode_HR": 0.0,
+                    "customer_country_mode_HU": 0.0,
+                    "customer_country_mode_ID": 0.001024380534736663,
+                    "customer_country_mode_IE": 0.00025108362933909633,
+                    "customer_country_mode_IL": 0.0,
+                    "customer_country_mode_IN": 0.0032839032502171117,
+                    "customer_country_mode_IT": 0.0036259173060571863,
+                    "customer_country_mode_JO": 0.00042628613242224017,
+                    "customer_country_mode_JP": 0.001363227961115773,
+                    "customer_country_mode_KE": 0.0,
+                    "customer_country_mode_KR": 0.00016162731039695062,
+                    "customer_country_mode_LV": 0.0008534425892207549,
+                    "customer_country_mode_MA": 0.0,
+                    "customer_country_mode_MX": 9.189414210321225e-05,
+                    "customer_country_mode_MY": 4.393924197734651e-08,
+                    "customer_country_mode_NL": 0.025996015020191086,
+                    "customer_country_mode_NO": 0.0003814451830486651,
+                    "customer_country_mode_NZ": 0.0021213717589950447,
+                    "customer_country_mode_PA": 0.0,
+                    "customer_country_mode_PE": 0.0003329673312635412,
+                    "customer_country_mode_PH": 0.0,
+                    "customer_country_mode_PK": 0.0,
+                    "customer_country_mode_PL": 0.000785298962609745,
+                    "customer_country_mode_PT": 2.030020839755401e-05,
+                    "customer_country_mode_PY": 0.0,
+                    "customer_country_mode_RO": 0.00033235608221514063,
+                    "customer_country_mode_RS": 0.0,
+                    "customer_country_mode_RU": 0.007381895362477102,
+                    "customer_country_mode_SA": 0.0,
+                    "customer_country_mode_SE": 0.024934331724187676,
+                    "customer_country_mode_SG": 0.0008553725372896239,
+                    "customer_country_mode_SI": 0.007742495483150057,
+                    "customer_country_mode_SK": 2.57927038347626e-07,
+                    "customer_country_mode_TH": 0.00017929595047284021,
+                    "customer_country_mode_TN": 0.0,
+                    "customer_country_mode_TR": 0.0012853982155303027,
+                    "customer_country_mode_TW": 6.84997963557255e-06,
+                    "customer_country_mode_UA": 0.0008159602615886304,
+                    "customer_country_mode_US": 0.01071497892407077,
+                    "customer_country_mode_UY": 0.0,
+                    "customer_country_mode_VE": 0.0,
+                    "customer_country_mode_VN": 0.0,
+                    "customer_country_mode_ZA": 0.0002657385495111336,
+                    "quantity_sum": 0.030713886738385345,
+                    "price_sum": 0.05266857592026342,
+                    "unit_weight": 0.28848205728034176,
+                    "unit_price_mean": 0.09071741274112916,
+                    "customer_country_count": 0.07050773309512484,
+                    "customer_id_count": 0.07944409475169176
+                }
+            }
+        ],
+        "XGBoost": [
+            {
+                "labeled_percentage": 1.0,
+                "importances": {
+                    "day_week_mode_0": 0.011475345119833946,
+                    "day_week_mode_1": 0.011484350077807903,
+                    "day_week_mode_2": 0.010436066426336765,
+                    "day_week_mode_3": 0.009785606525838375,
+                    "day_week_mode_4": 0.011185784824192524,
+                    "day_week_mode_5": 0.0,
+                    "day_week_mode_6": 0.0,
+                    "month_mode_1": 0.007979811169207096,
+                    "month_mode_2": 0.012053378857672215,
+                    "month_mode_3": 0.01238273549824953,
+                    "month_mode_4": 0.0067423488944768906,
+                    "month_mode_5": 0.03929872065782547,
+                    "month_mode_6": 0.010973679833114147,
+                    "month_mode_7": 0.008762940764427185,
+                    "month_mode_8": 0.007060679607093334,
+                    "month_mode_9": 0.00663386844098568,
+                    "month_mode_10": 0.012922381982207298,
+                    "month_mode_11": 0.012164057232439518,
+                    "month_mode_12": 0.013011470437049866,
+                    "quarter_mode_1": 0.007338894531130791,
+                    "quarter_mode_2": 0.009548035450279713,
+                    "quarter_mode_3": 0.008387409150600433,
+                    "quarter_mode_4": 0.010806852951645851,
+                    "year_mode_2014": 0.016719292849302292,
+                    "year_mode_2015": 0.011862227693200111,
+                    "year_mode_2016": 0.00843686144798994,
+                    "year_mode_2017": 0.009130741469562054,
+                    "year_mode_2018": 0.015392085537314415,
+                    "year_mode_2019": 0.01225518062710762,
+                    "year_mode_2020": 0.009955067187547684,
+                    "year_mode_2021": 0.008863740600645542,
+                    "year_mode_2022": 0.012420878745615482,
+                    "year_mode_2023": 0.007112906314432621,
+                    "customer_country_mode_14": 0.004185265861451626,
+                    "customer_country_mode_AE": 0.007297847885638475,
+                    "customer_country_mode_AR": 0.0024171159602701664,
+                    "customer_country_mode_AT": 0.005794312339276075,
+                    "customer_country_mode_AU": 0.006770968437194824,
+                    "customer_country_mode_BA": 0.0,
+                    "customer_country_mode_BE": 0.0,
+                    "customer_country_mode_BG": 0.0,
+                    "customer_country_mode_BO": 0.0,
+                    "customer_country_mode_BR": 0.006483419332653284,
+                    "customer_country_mode_BY": 0.002108015352860093,
+                    "customer_country_mode_CA": 0.006551734637469053,
+                    "customer_country_mode_CH": 0.00924527645111084,
+                    "customer_country_mode_CL": 0.0,
+                    "customer_country_mode_CN": 0.012638360261917114,
+                    "customer_country_mode_CO": 0.010491576045751572,
+                    "customer_country_mode_CR": 0.0,
+                    "customer_country_mode_CZ": 0.003438480431213975,
+                    "customer_country_mode_DE": 0.008519582450389862,
+                    "customer_country_mode_DK": 0.01952771469950676,
+                    "customer_country_mode_DO": 0.002714016707614064,
+                    "customer_country_mode_EC": 0.003475095145404339,
+                    "customer_country_mode_EE": 0.0,
+                    "customer_country_mode_EG": 0.0059972950257360935,
+                    "customer_country_mode_ES": 0.013889308087527752,
+                    "customer_country_mode_FI": 0.007383937016129494,
+                    "customer_country_mode_FR": 0.007853482849895954,
+                    "customer_country_mode_GB": 0.009837266989052296,
+                    "customer_country_mode_GR": 0.011848199181258678,
+                    "customer_country_mode_HK": 0.01614939607679844,
+                    "customer_country_mode_HR": 0.0,
+                    "customer_country_mode_HU": 0.0,
+                    "customer_country_mode_ID": 0.008193619549274445,
+                    "customer_country_mode_IE": 0.00505489157512784,
+                    "customer_country_mode_IL": 0.0,
+                    "customer_country_mode_IN": 0.014169933274388313,
+                    "customer_country_mode_IT": 0.008604764007031918,
+                    "customer_country_mode_JO": 0.005779663100838661,
+                    "customer_country_mode_JP": 0.007274836301803589,
+                    "customer_country_mode_KE": 0.0,
+                    "customer_country_mode_KR": 0.007623433601111174,
+                    "customer_country_mode_LV": 0.008391760289669037,
+                    "customer_country_mode_MA": 0.0,
+                    "customer_country_mode_MX": 0.014160952530801296,
+                    "customer_country_mode_MY": 0.002184284385293722,
+                    "customer_country_mode_NL": 0.02632785588502884,
+                    "customer_country_mode_NO": 0.008186343125998974,
+                    "customer_country_mode_NZ": 0.009211883880198002,
+                    "customer_country_mode_PA": 0.0,
+                    "customer_country_mode_PE": 0.012216651812195778,
+                    "customer_country_mode_PH": 0.0,
+                    "customer_country_mode_PK": 0.0,
+                    "customer_country_mode_PL": 0.008253977634012699,
+                    "customer_country_mode_PT": 0.0,
+                    "customer_country_mode_PY": 0.0052994792349636555,
+                    "customer_country_mode_RO": 0.009163007140159607,
+                    "customer_country_mode_RS": 0.0,
+                    "customer_country_mode_RU": 0.013974868692457676,
+                    "customer_country_mode_SA": 0.0,
+                    "customer_country_mode_SE": 0.02727515809237957,
+                    "customer_country_mode_SG": 0.015712030231952667,
+                    "customer_country_mode_SI": 0.029083844274282455,
+                    "customer_country_mode_SK": 0.002295369515195489,
+                    "customer_country_mode_TH": 0.008091368712484837,
+                    "customer_country_mode_TN": 0.0,
+                    "customer_country_mode_TR": 0.013618288561701775,
+                    "customer_country_mode_TW": 0.0,
+                    "customer_country_mode_UA": 0.020919108763337135,
+                    "customer_country_mode_US": 0.015520242974162102,
+                    "customer_country_mode_UY": 0.0,
+                    "customer_country_mode_VE": 0.0,
+                    "customer_country_mode_VN": 0.0,
+                    "customer_country_mode_ZA": 0.004859341308474541,
+                    "quantity_sum": 0.011554557830095291,
+                    "price_sum": 0.01495378464460373,
+                    "unit_weight": 0.05040319636464119,
+                    "unit_price_mean": 0.029179899021983147,
+                    "customer_country_count": 0.024700341746211052,
+                    "customer_id_count": 0.020560232922434807
+                }
+            }
+        ],
+        "LightGBM": [
+            {
+                "labeled_percentage": 1.0,
+                "importances": {
+                    "day_week_mode_0": 4731.524585891158,
+                    "day_week_mode_1": 5713.925178565469,
+                    "day_week_mode_2": 5360.904225643421,
+                    "day_week_mode_3": 4936.170556029116,
+                    "day_week_mode_4": 4320.505758648524,
+                    "day_week_mode_5": 0.0,
+                    "day_week_mode_6": 0.0,
+                    "month_mode_1": 2597.996402149176,
+                    "month_mode_2": 3070.2833966639605,
+                    "month_mode_3": 4456.228474823409,
+                    "month_mode_4": 1118.240621469009,
+                    "month_mode_5": 16839.419790283362,
+                    "month_mode_6": 2346.626183272837,
+                    "month_mode_7": 1909.201948583126,
+                    "month_mode_8": 1150.7982415370643,
+                    "month_mode_9": 907.5618948286013,
+                    "month_mode_10": 2619.6541899841977,
+                    "month_mode_11": 3313.4666950576648,
+                    "month_mode_12": 1647.817052939441,
+                    "quarter_mode_1": 3009.936792791821,
+                    "quarter_mode_2": 3448.805348816175,
+                    "quarter_mode_3": 2222.366706609726,
+                    "quarter_mode_4": 2415.167419308651,
+                    "year_mode_2014": 7508.636128431569,
+                    "year_mode_2015": 3925.095315299928,
+                    "year_mode_2016": 2257.2405853795062,
+                    "year_mode_2017": 2015.4968506760895,
+                    "year_mode_2018": 4439.324978427787,
+                    "year_mode_2019": 3585.8590312073484,
+                    "year_mode_2020": 2418.7070637345314,
+                    "year_mode_2021": 4699.880490438314,
+                    "year_mode_2022": 6919.653203710471,
+                    "year_mode_2023": 1322.991999664344,
+                    "customer_country_mode_14": 0.0,
+                    "customer_country_mode_AE": 0.0,
+                    "customer_country_mode_AR": 0.0,
+                    "customer_country_mode_AT": 0.0,
+                    "customer_country_mode_AU": 0.0,
+                    "customer_country_mode_BA": 0.0,
+                    "customer_country_mode_BE": 0.0,
+                    "customer_country_mode_BG": 0.0,
+                    "customer_country_mode_BO": 0.0,
+                    "customer_country_mode_BR": 0.0,
+                    "customer_country_mode_BY": 0.0,
+                    "customer_country_mode_CA": 0.0,
+                    "customer_country_mode_CH": 268.0382286310196,
+                    "customer_country_mode_CL": 0.0,
+                    "customer_country_mode_CN": 2796.7458740770817,
+                    "customer_country_mode_CO": 0.0,
+                    "customer_country_mode_CR": 0.0,
+                    "customer_country_mode_CZ": 0.0,
+                    "customer_country_mode_DE": 1369.6616995334625,
+                    "customer_country_mode_DK": 6517.810841102806,
+                    "customer_country_mode_DO": 0.0,
+                    "customer_country_mode_EC": 0.0,
+                    "customer_country_mode_EE": 0.0,
+                    "customer_country_mode_EG": 0.0,
+                    "customer_country_mode_ES": 350.7394416332245,
+                    "customer_country_mode_FI": 0.0,
+                    "customer_country_mode_FR": 1387.4039608836174,
+                    "customer_country_mode_GB": 1335.6359748542309,
+                    "customer_country_mode_GR": 0.0,
+                    "customer_country_mode_HK": 0.0,
+                    "customer_country_mode_HR": 0.0,
+                    "customer_country_mode_HU": 0.0,
+                    "customer_country_mode_ID": 0.0,
+                    "customer_country_mode_IE": 0.0,
+                    "customer_country_mode_IL": 0.0,
+                    "customer_country_mode_IN": 1398.0147586166859,
+                    "customer_country_mode_IT": 1658.5173279047012,
+                    "customer_country_mode_JO": 0.0,
+                    "customer_country_mode_JP": 302.28172504901886,
+                    "customer_country_mode_KE": 0.0,
+                    "customer_country_mode_KR": 0.0,
+                    "customer_country_mode_LV": 0.0,
+                    "customer_country_mode_MA": 0.0,
+                    "customer_country_mode_MX": 0.0,
+                    "customer_country_mode_MY": 0.0,
+                    "customer_country_mode_NL": 6062.962900798768,
+                    "customer_country_mode_NO": 0.0,
+                    "customer_country_mode_NZ": 103.65732103586197,
+                    "customer_country_mode_PA": 0.0,
+                    "customer_country_mode_PE": 0.0,
+                    "customer_country_mode_PH": 0.0,
+                    "customer_country_mode_PK": 0.0,
+                    "customer_country_mode_PL": 0.0,
+                    "customer_country_mode_PT": 0.0,
+                    "customer_country_mode_PY": 0.0,
+                    "customer_country_mode_RO": 0.0,
+                    "customer_country_mode_RS": 0.0,
+                    "customer_country_mode_RU": 1563.1854540887734,
+                    "customer_country_mode_SA": 0.0,
+                    "customer_country_mode_SE": 13387.621948445623,
+                    "customer_country_mode_SG": 1193.613315920502,
+                    "customer_country_mode_SI": 1086.6992628872395,
+                    "customer_country_mode_SK": 0.0,
+                    "customer_country_mode_TH": 0.0,
+                    "customer_country_mode_TN": 0.0,
+                    "customer_country_mode_TR": 354.66430263221264,
+                    "customer_country_mode_TW": 0.0,
+                    "customer_country_mode_UA": 1684.2139870269134,
+                    "customer_country_mode_US": 5353.8533909318485,
+                    "customer_country_mode_UY": 0.0,
+                    "customer_country_mode_VE": 0.0,
+                    "customer_country_mode_VN": 0.0,
+                    "customer_country_mode_ZA": 0.0,
+                    "quantity_sum": 14663.385674488976,
+                    "price_sum": 24401.68683537498,
+                    "unit_weight": 126330.83966476312,
+                    "unit_price_mean": 43802.60704094715,
+                    "customer_country_count": 36526.871382861995,
+                    "customer_id_count": 32454.79899321986
+                }
+            }
+        ],
+        "Bagging": [
+            {
+                "labeled_percentage": 1.0,
+                "importances": null
+            }
+        ]
+    }
+}

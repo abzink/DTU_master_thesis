@@ -1,0 +1,3 @@
+Grid search best score: 0.9347334876300145
+Test accuracy: 0.7177230046948356
+Best parameters: {'gamma': 100.0, 'kernel': 'rbf', 'n_neighbors': 3}

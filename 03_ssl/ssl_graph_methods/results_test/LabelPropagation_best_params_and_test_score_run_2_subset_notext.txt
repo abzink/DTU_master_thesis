@@ -1,0 +1,6 @@
+Grid search best score: 0.9225040916530279
+Test accuracy: 0.5886150234741784
+Test precision: 0.6647468634728098
+Test recall: 0.5886150234741784
+Test F1 score: 0.6169328461429883
+Best parameters: {'gamma': 100, 'kernel': 'rbf', 'n_neighbors': 2}
