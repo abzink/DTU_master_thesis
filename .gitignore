@@ -4,3 +4,7 @@
 02_clustering/clustering_BERT/bert_embedding_vol_2.pkl
 02_clustering/clustering_BERT/bert_embeddings_vol_1.pkl
 03_ssl/ssl_graph_methods/results_test/LabelPropagation_best_model_run_1.joblib
+01_data_preparation/eda_agg.html
+01_data_preparation/eda_all.html
+01_data_preparation/eda_bertopic_labeled.html
+01_data_preparation/eda_betopic.html
