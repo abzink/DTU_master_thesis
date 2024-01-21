@@ -10,8 +10,8 @@ Three folders refer to different stages of the project:
 
 Additionally, 00_testing folder includes all the testing and exploration within any of the stages above. 
 
-requirements.txt outlines all the packages necessary to run the code
+**requirements.txt** outlines all the packages necessary to run the code.
 
-plotting_utils.py - function to save the figures
+**plotting_utils.py** codes a function to save the figures.
 
-Please refer to .gitignore file to see which files are not included, namely data and figures because of their large size and data security reasons. 
+Please refer to **.gitignore** file to see which files are not included, namely data and figures because of their large size and data security reasons. 
