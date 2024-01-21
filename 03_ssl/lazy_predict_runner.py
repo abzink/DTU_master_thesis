@@ -3,13 +3,12 @@ import pandas as pd
 from sklearn.model_selection import train_test_split, cross_val_score
 from lazypredict.Supervised import LazyClassifier
 import sys
-# Add the folder path to sys.path
-# Assuming my_notebook.ipynb and mymodule are in the same parent directory (project)
 sys.path.append("../01_data_preparation")
 from num_cat_data_transformers import PreprocessingPipeline  # Make sure this is the updated version of PreprocessingPipeline
 
 # Define the LazyPredictPipeline class
 class LazyPredictPipeline:
+    """ A class to run the LazyPredict pipeline on a dataset."""
     # Initialize the pipeline with data, target column, columns types, log-transformed columns, test size, and number of cross-validation folds
     def __init__(self, df, target_col, categorical_columns, numerical_columns, log_transform_columns, test_size=0.2, n_folds=5):
         self.df = df
