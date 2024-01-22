@@ -1,5 +1,3 @@
-# python3 data_preprocessing_class.py ./data/data_all.csv
-
 import pandas as pd
 import sys
 import nltk
@@ -40,7 +38,6 @@ class DataProcessor:
         # Drop all rows where MMITCL is in the list above
         self.df = self.df[~self.df['MMITCL'].isin(MMITCL_filter_out)]
         
-
         # Drop unnecessary columns
         self.df.drop(['OBPONR', 'MBBCOS', 'MMITGR', 'MMITCL', 'OKCUNM', 'MBLEAT'], axis=1, inplace=True)
 

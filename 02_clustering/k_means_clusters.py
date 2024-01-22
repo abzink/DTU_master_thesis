@@ -102,10 +102,13 @@ def cluster_and_visualize(data, main_df, reduction_method_name=None, feature_typ
             cat_data = plot_df[plot_df['Category'] == cat]
             sns.scatterplot(x='Dim1', y='Dim2', color=cat_color_dict[cat], data=cat_data, s=50, label=cat, edgecolor='black')
 
-        plt.title(f'{feature_type} Embeddings Clusters via {reduction_method_name}')
-        plt.xlabel(f'{reduction_method_name} Component 1')
-        plt.ylabel(f'{reduction_method_name} Component 2')
-        plt.legend(title="Categories")
+        plt.title(f'{feature_type} Embeddings Clusters via {reduction_method_name}', fontsize= 18)
+        plt.xlabel(f'{reduction_method_name} Component 1', fontsize = 16)
+        plt.ylabel(f'{reduction_method_name} Component 2', fontsize = 16)
+        # Increase the size of the x-tick and y-tick labels
+        plt.tick_params(axis='x', labelsize=12)  # Increase x-tick label size
+        plt.tick_params(axis='y', labelsize=12)  # Increase y-tick label size
+        plt.legend(title="Categories", fontsize = 14, title_fontsize = 14)
 
         plt.tight_layout()
 

@@ -49,11 +49,14 @@ def pca_reduction(features_matrix, feature_type, save_path=None):
     # Creating a custom legend
     from matplotlib.lines import Line2D
     legend_elements = [Line2D([0], [0], color=viridis_color[7], linestyle='--', label=f'95% variance at {optimal_components} components')]
-    plt.legend(handles=legend_elements, loc='best')
+    plt.legend(handles=legend_elements, loc='best', fontsize = 14)
 
-    plt.xlabel('Number of Components')
-    plt.ylabel('Cumulative Explained Variance')
-    plt.title(f'PCA on {feature_type} Embeddings - Explained Variance')
+    plt.xlabel('Number of Components', fontsize = 14)
+    plt.ylabel('Cumulative Explained Variance', fontsize = 14)
+    plt.title(f'PCA on {feature_type} Embeddings - Explained Variance', fontsize = 14)
+    # Increase the size of the x-tick and y-tick labels
+    plt.tick_params(axis='x', labelsize=12)  # Increase x-tick label size
+    plt.tick_params(axis='y', labelsize=12)  # Increase y-tick label size
     plt.grid(True)
 
     plt.tight_layout()

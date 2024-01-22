@@ -8,3 +8,7 @@
 01_data_preparation/eda_all.html
 01_data_preparation/eda_bertopic_labeled.html
 01_data_preparation/eda_betopic.html
+01_data_preparation/figures
+02_clustering/clustering_BERT/figures
+02_clustering/clustering_TFIDF/figures
+03_ssl/ssl_self_training/final/figures

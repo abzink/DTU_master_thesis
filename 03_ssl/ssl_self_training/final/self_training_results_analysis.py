@@ -456,16 +456,18 @@ class SelfTrainingResultsProcessor:
         plt.figure(figsize=(10, 8))
         ax = sns.barplot(x="model", y="pseudo_label_count", hue="labeled_percentage", data=data, palette=last_five_colors)
 
-        plt.title(f'Pseudo-Labels Count ({balancing_variant})', fontsize=14)
+        plt.title(f'Pseudo-Labels Count ({balancing_variant})', fontsize=18)
         plt.xlabel('')
-        plt.ylabel('Count', fontsize=12) 
-        plt.xticks(fontsize=12)
-        plt.yticks(fontsize=12)
+        plt.ylabel('Count', fontsize=16) 
+        plt.xticks(fontsize=16)
+        plt.yticks(fontsize=16)
+        plt.tick_params(axis='x', labelsize=14)  # Increase x-tick label size
+        plt.tick_params(axis='y', labelsize=14)  # Increase y-tick label size
 
-        # Create a new legend
+        # Create a new legend for each subplot
         handles, _ = ax.get_legend_handles_labels()
         new_labels = ['20', '40', '60', '80', '100']
-        plt.legend(handles, new_labels, title='Labeled Fraction (%)', fontsize=12)
+        plt.legend(handles, new_labels, title='Labeled Fraction (%)', fontsize=14, title_fontsize=14)
 
         # Save the figure before showing the plot
         fig = ax.get_figure()
